@@ -1,0 +1,115 @@
+  ( Main folder for example folder name GitHub that path use this )
+
+git clone https://github.com/Arjunashri/githubemc1.git
+
+cd githubemc1
+
+git status
+
+git add test2.txt (Visual to github transfer the file with add & delete)
+
+git commit -m "Test2.txt file added" ( -m means commit message )
+
+git push origin main ( Origin means this link >   
+        https://github.com/Arjunashri/githubemc1.git)
+
+git pull ( github to visual transfer the file )
+
+
+
+
+
+( New Folder making with file)
+cd .. ( back folder command )
+cd githubemc2 ( type folder name command )
+git init
+git add . ( two or many file at the same time will be add with github )
+git status
+git commit -m "Created index.html and style.css"
+   ( go to github click + create new file fill the name ) 
+git remote add origin https://github.com/Arjunashri/githubemc2.git
+   ( you can change Master to Main after type the below command )
+git branch -M main
+git branch ( Now you can see the brance name )
+git push origin main
+
+
+
+( Branch making )
+git branch -a ( How many branch showing command )
+   (github Click branch added new name click create branch )
+git pull
+   ( Again check git branch -a now you can see 2branch)
+git checkout gitbranch1 ( Change to other branch command )
+   ( make one file more file to visual ) 
+git add .
+git status 
+git commit -m "Created newfile in gitbranceh1"
+git push origin gitbranch1( showing error )
+
+git checkout main ( showing old files only )
+git checkout getbranch1 ( showing that new file also )
+ ( again type git checkout main )
+ ( How to merge New branch from Main branch )
+git diff gitbranch1 
+git merge gitbranch1 
+git push origin main
+
+
+
+( Pull request )
+git branch -a 
+git branch newbranch2
+git branch -a 
+git checkout newbranch2 ( you can change other branch to newbranch2)
+git branch
+  ( create one new text file )
+git add .
+git commit -m "Added newbranch 2 text file"
+git push origin newbranch2
+   ( you working big project that time, you can't merge new branch(file) to main branch)
+   ( go to github website click pull request on top after 
+click new pull request ( Boss will see pull request message
+They will confirm and merge the file ->Merge pull request ))
+
+
+  ( Two branch pull request or create file )
+  ( Create new repository ) ( create new file one )
+  ( create two branch from main branch )
+-> Main branch file type there city:none
+-> branch1 branch file type there city:Bangalore
+-> branch2 branch file type there city:Chennai
+  ( Pull request showing two message )
+  ( Boss will see branch1 file to main branch merge and confirm )
+  ( Again Boss will see branch2 file to main branch ->confliect file he will Resolve conflicts and merge the file )
+
+
+
+   (Projects)
+   ( Create new repository name HTMLAcotrPage )
+-> create new file vijay.html ( Type the prog )
+   ( Create 2 new branch ramesh1 and suresh2 )
+-> Copy code https Paste git colone place ( use cd.. after paste link)
+git branch
+git branch -a
+git checkout ramesh1
+   ( Added one paragraph about vijay )
+git add .
+git status
+git commit -m "Added Paragraph"
+git push origin ramesh1 ( goto github check add the paragraph )
+git checkout main
+git merge ramesh1
+git push origin main
+git checkout suresh2
+git branch
+git pull ( only get main and ramesh1 branch change only )
+git pull origin main
+   ( suresh2 create p tag added phone number )
+git add .
+git commit -m "Added phone number"
+git push origin suresh2
+git checkout main
+git merge suresh2
+git push origin main
+
